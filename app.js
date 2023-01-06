@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
     const app = express();
     mongoose.set('strictQuery', false);
-mongoose.connect('mongodb+srv://neha:neha@cluster0.uaim60v.mongodb.net/REGISTRSTION', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/REGISTRSTION', {useNewUrlParser: true});
 try {
     console.log("connection done");
 } catch (error) {
